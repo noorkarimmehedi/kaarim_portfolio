@@ -51,17 +51,15 @@ export const metadata: Metadata = {
     apple: "/a-new-adventure-favicon.svg",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
-  themeColor: "#fefefe",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    themeColor: "#fefefe"
-  },
   other: {
-    "theme-color": "#fefefe",
-    "msapplication-TileColor": "#fefefe",
-    "apple-mobile-web-app-status-bar-style": "light-content"
+    "msapplication-TileColor": "#fefefe"
   }
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#fefefe"
 };
 
 export default function RootLayout({

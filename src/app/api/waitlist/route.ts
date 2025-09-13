@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { addToWaitlist } from '@/lib/supabase/waitlist';
+import { addToWaitlist } from '@/lib/local-storage/waitlist';
 
 export async function POST(request: Request) {
   try {

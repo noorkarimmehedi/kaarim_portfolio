@@ -42,7 +42,7 @@ export default function Home() {
                     useOriginalCharsOnly={true}
                     className="text-base sm:text-sm md:text-base lg:text-lg xl:text-xl break-words inline-block"
                   >
-                    I&apos;m Kaarim & a new adventure is about to begin ✺&#xfe0e;
+                    I&apos;m Kaarim, a design engineer based in London. ✺&#xfe0e;
                   </ScrambleHover>
                 </div>
               </AnimatedText>
@@ -54,7 +54,7 @@ export default function Home() {
             <WaitlistForm />
             <div className="mt-4 text-left">
               <AnimatedText delay={600} duration={0.6}>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-black">
+                <p className="text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl text-black">
                   You can reach out to me on <Link href="https://x.com/kaarimdotcom" target="_blank" rel="noopener noreferrer" className="underline transition-colors duration-200" style={{color: '#5548ff'}}>X/Twitter</Link> or see more of my work on <Link href="/museum" className="underline transition-colors duration-200" style={{color: '#5548ff'}}>My Museum</Link>.
                 </p>
               </AnimatedText>

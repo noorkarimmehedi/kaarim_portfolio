@@ -39,6 +39,7 @@ export default function Museum() {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="min-h-screen bg-[#fefefe] text-black px-4 py-16 sm:px-6 sm:py-20 md:py-24 lg:py-28"
+      style={{backgroundColor: '#fefefe'}}
     >
       <div className="max-w-6xl mx-auto">
         {/* Breadcrumb Navigation */}

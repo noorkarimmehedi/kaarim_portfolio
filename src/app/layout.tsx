@@ -51,6 +51,17 @@ export const metadata: Metadata = {
     apple: "/a-new-adventure-favicon.svg",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
+  themeColor: "#fefefe",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    themeColor: "#fefefe"
+  },
+  other: {
+    "theme-color": "#fefefe",
+    "msapplication-TileColor": "#fefefe",
+    "apple-mobile-web-app-status-bar-style": "light-content"
+  }
 };
 
 export default function RootLayout({
@@ -59,9 +70,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" style={{backgroundColor: '#fefefe'}}>
+      <head>
+        <meta name="theme-color" content="#fefefe" />
+        <meta name="msapplication-TileColor" content="#fefefe" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="light-content" />
+      </head>
       <body
         className={`antialiased h-screen w-screen`}
+        style={{backgroundColor: '#fefefe'}}
       >
         {children}
         <Analytics />
